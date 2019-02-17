@@ -13,7 +13,11 @@ function SEO({ description, lang, meta, keywords, title }) {
         return (
           <Helmet
             htmlAttributes={{
-              lang,
+              class: "html-fs nightmode-off",
+              lang: lang,
+            }}
+            bodyAttributes={{
+              class: "of-hidden body-fs coming-soon",
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}

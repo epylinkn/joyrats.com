@@ -42,6 +42,8 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,900");
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
 *,
 *::before,
 *::after {
@@ -12634,6 +12636,18 @@ div.style-toggle {
 
 
 
-
+.logo { font-family: "Fredoka One" !important; }
 body > div { height: 100%; }
 body > div > div { height: 100%; }
+
+/* some overrides... */
+body section#fullscreen.fs-coming-soon h1 {
+  font-size: 112px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body section#fullscreen.fs-coming-soon h1 {
+    font-size: 112px !important;
+    padding-left: 11px;
+  }
+}

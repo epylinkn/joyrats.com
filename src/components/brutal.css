@@ -11322,8 +11322,8 @@ section#fullscreen {
       @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
         section#fullscreen > div > div {
           width: 90%; } }
-      section#fullscreen > div > div:hover h1, section#fullscreen > div > div:hover h2, section#fullscreen > div > div:hover .cta {
-        border-color: #fff !important; }
+      /* section#fullscreen > div > div:hover h1, section#fullscreen > div > div:hover h2, section#fullscreen > div > div:hover .cta {
+        border-color: #fff !important; } */
   section#fullscreen h1, section#fullscreen h2 {
     color: #fff;
     background-color: #000;
@@ -11592,7 +11592,8 @@ section#fullscreen.fs-coming-soon {
       section#fullscreen.fs-coming-soon h1, section#fullscreen.fs-coming-soon h2, section#fullscreen.fs-coming-soon h3 {
         border-color: #000 !important; } }
   section#fullscreen.fs-coming-soon h1 {
-    font-size: 140px;
+    /* font-size: 120px; */
+    font-size: 100px;
     margin-bottom: 0;
     position: relative;
     line-height: 150px;
@@ -11618,7 +11619,7 @@ section#fullscreen.fs-coming-soon {
         border-bottom-color: #fff !important; } }
     @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
       section#fullscreen.fs-coming-soon h1 {
-        font-size: 122px;
+        font-size: 100px;
         padding-left: 11px; } }
   section#fullscreen.fs-coming-soon h2 {
     font-size: 2.2em;
@@ -11678,48 +11679,11 @@ section#fullscreen.fs-coming-soon {
         padding-right: 0;
         letter-spacing: 15px;
         font-weight: 300; } }
-  section#fullscreen.fs-coming-soon p.coming-soon-contact, section#fullscreen.fs-coming-soon p.coming-soon-copyright {
+  section#fullscreen.fs-coming-soon p.coming-soon-copyright {
     position: absolute;
     bottom: 15px;
     width: 100%;
     z-index: 3; }
-  section#fullscreen.fs-coming-soon p.coming-soon-contact {
-    bottom: 135px;
-    left: 0;
-    right: 0; }
-    section#fullscreen.fs-coming-soon p.coming-soon-contact a {
-      display: inline-block;
-      position: relative; }
-      section#fullscreen.fs-coming-soon p.coming-soon-contact a:hover:before {
-        height: 3px; }
-      section#fullscreen.fs-coming-soon p.coming-soon-contact a:before {
-        content: '';
-        position: absolute;
-        top: calc(100% - 2px);
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background: #000;
-        -webkit-transition: height .3s ease-in-out;
-        transition: height .3s ease-in-out; }
-    @media (max-width: 767.98px) {
-      section#fullscreen.fs-coming-soon p.coming-soon-contact {
-        bottom: 15px;
-        padding-left: 15px;
-        text-align: left;
-        font-size: 0.875em;
-        z-index: 4;
-        left: 0;
-        width: auto; } }
-    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-      section#fullscreen.fs-coming-soon p.coming-soon-contact {
-        bottom: 15px;
-        padding-left: 35px;
-        text-align: left;
-        font-size: 0.875em;
-        z-index: 4;
-        left: 0;
-        width: auto; } }
   section#fullscreen.fs-coming-soon p.coming-soon-copyright {
     text-align: right;
     padding-right: 35px;
@@ -11728,6 +11692,22 @@ section#fullscreen.fs-coming-soon {
     @media (max-width: 767.98px) {
       section#fullscreen.fs-coming-soon p.coming-soon-copyright {
         padding-right: 15px; } }
+  section#fullscreen.fs-coming-soon p.copyleft {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    z-index: 4; }
+  section#fullscreen.fs-coming-soon p.copyleft {
+    text-align: left;
+    padding-left: 35px;
+    font-size: 0.875em;
+    left: 0; }
+    @media (max-width: 767.98px) {
+      section#fullscreen.fs-coming-soon p.copyleft {
+        padding-left: 15px; } }
+.btn-patreon {
+  height: 2em;
+}
 
 /*!
  * [Coming soon countdown page - Table of contents]
@@ -12640,14 +12620,7 @@ div.style-toggle {
 body > div { height: 100%; }
 body > div > div { height: 100%; }
 
-/* some overrides... */
-body section#fullscreen.fs-coming-soon h1 {
-  font-size: 112px !important;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  body section#fullscreen.fs-coming-soon h1 {
-    font-size: 112px !important;
-    padding-left: 11px;
-  }
+.tinyletter {
+  display: block;
+  text-align: center !important;
 }

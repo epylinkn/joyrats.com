@@ -18,9 +18,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         {children}
-        <footer>
+        {/*<footer>
           © {new Date().getFullYear()}, Made with ❤️ in NYC
-        </footer>
+        </footer>*/}
       </>
     )}
   />

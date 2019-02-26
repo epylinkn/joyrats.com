@@ -1,6 +1,8 @@
 import React from "react"
 import $ from 'jquery' // important: case sensitive.
+import ScaleText from 'react-scale-text'
 
+import patron from '../images/become-a-patron-button@2x.png'
 
 
 class ComingSoon extends React.Component {
@@ -19,7 +21,7 @@ class ComingSoon extends React.Component {
         elmt.html(txt);
       }
 
-      var one_line = $('<span class="stretch_it">' + txt + '</span>'),
+      var one_line = $('<span class="stretch_it logo">' + txt + '</span>'),
       nb_char = elmt.text().length,
       spacing = cont_width / nb_char,
       txt_width;
@@ -98,19 +100,24 @@ class ComingSoon extends React.Component {
     }
   }
 
+  handleSubmit(event) {
+    window.open('https://tinyletter.com/joyrats', 'popupwindow', 'scrollbars=yes,width=800,height=600')
+    return true
+  }
+
   render() {
     return (
       <>
         <div className="preloader preloader-xl">
           <div>
             <p className="loading-text">
-              <span>J</span>
-              <span>O</span>
-              <span>Y</span>
-              <span>R</span>
-              <span>A</span>
-              <span>T</span>
-              <span>S</span>
+              <span className="logo">J</span>
+              <span className="logo">O</span>
+              <span className="logo">Y</span>
+              <span className="logo">R</span>
+              <span className="logo">A</span>
+              <span className="logo">T</span>
+              <span className="logo">S</span>
             </p>
             <p>is loading</p>
           </div>
@@ -122,22 +129,23 @@ class ComingSoon extends React.Component {
               <div className="row">
                 <div className="col-lg-6">
                   <h3>Coming Soon</h3>
-                  <h1 className="stretch-text"><span className="stretch_it">BRUTAL</span></h1>
-                  <h2>A Brutalist HTML5 Template</h2>
+                  <h1 className="stretch-text">
+                    <span className="stretch_it logo">JOYRATS</span>
+                  </h1>
+                  <h2>Brooklyn Art Collective</h2>
                 </div>
                 <div className="col-lg-6">
-                  <form className="sub-form" method="post" action="./php/subscribe.php">
-                    <span className="sending">Thanks for subscribing!</span>
-                    <span className="sent">You are subscribed!</span>
-                    <h4>Subscribe</h4>
+                  <form className="sub-form" method="post" action="https://tinyletter.com/joyrats" target="popupwindow" onSubmit={this.handleSubmit}>
+                    <h4 className="tinyletter">Join Our TinyLetter</h4>
                     <div className="form-group">
                       <label htmlFor="name">Name</label>
                       <input type="text" className="form-control" id="name" name="name" placeholder="Your name" />
-                      <label htmlFor="email">Email</label>
-                      <input type="email" className="form-control" id="email" name="email" placeholder="Your email" />
+                      <label htmlFor="tlemail">Email</label>
+                      <input type="email" className="form-control" id="tlemail" name="email" placeholder="Your email" />
                     </div>
                     <div className="text-right">
-                      <button type="submit" className="btn btn-primary">Get Notified</button>
+                      <input type="hidden" value="1" name="embed"/>
+                      <button type="submit" className="btn btn-primary">Subscribe</button>
                     </div>
                   </form>
                 </div>
@@ -145,8 +153,14 @@ class ComingSoon extends React.Component {
             </div>
           </div>
 
-          <p className="coming-soon-contact"><a href="/" data-toggle="modal" data-target=".contact-modal">Contact</a></p>
-          <p className="coming-soon-copyright"><a target="_blank" rel="noopener noreferrer" href="/">&copy;2018 JOYRATS</a></p>
+          <p className="copyleft">
+            <a target="_blank" href="https://www.patreon.com/join/joyrats?">
+              <img src={patron} className="btn-patreon" alt="Become a Patron" />
+            </a>
+          </p>
+          <p className="coming-soon-copyright">
+            © {new Date().getFullYear()} JOYRATS
+          </p>
         </section>
       </>
     )

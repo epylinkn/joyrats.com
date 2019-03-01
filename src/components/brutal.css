@@ -12624,3 +12624,8 @@ body > div > div { height: 100%; }
   display: block;
   text-align: center !important;
 }
+
+
+.anthony-post img {
+  max-width: 100%;
+}

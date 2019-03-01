@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/anthony`,
         name: `anthony`,
+        path: `${__dirname}/content/anthony`,
       },
     },
     {
@@ -36,8 +36,8 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-prismjs`,
           `gatsby-remark-smartypants`,
         ],
       },

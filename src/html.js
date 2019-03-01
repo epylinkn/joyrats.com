@@ -30,7 +30,7 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
 
-        <script src="/vendor/nightmode.js" crossOrigin="anonymous" />
+        {/*<script src="/vendor/nightmode.js" crossOrigin="anonymous" />*/}
       </body>
     </html>
   )

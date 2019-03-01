@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import "./brutal.css"
 
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

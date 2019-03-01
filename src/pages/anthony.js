@@ -32,7 +32,8 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+
+              {/*<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />*/}
             </div>
           )
         })}

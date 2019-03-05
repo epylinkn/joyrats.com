@@ -4,6 +4,9 @@ date: '2019-02-24T22:12:03.284Z'
 category: poem
 ---
 
+<iframe src="https://player.vimeo.com/video/321398369" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/321398369">Ollie Bottle Opener</a> from <a href="https://vimeo.com/buoydontfloat">Anthony Bui</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 Bottle openers are weird... on the one hand they symbolize a good time, a precursor to some sweet sweet alcohol.
 
 On the other hand, my relationship with alcohol is complex. We drink too much and I almost see it as a social tick. In some ways, I think alcohol (and bars) are how we monetize the need for play in adulthood.
@@ -22,9 +25,6 @@ At the same time, there's a lot of snobbery in it. Is that just some adults want
 
 
 ![sketch](./90-bottle-openers.jpg)
-
-<iframe src="https://player.vimeo.com/video/321398369" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/321398369">Ollie Bottle Opener</a> from <a href="https://vimeo.com/buoydontfloat">Anthony Bui</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 Process
 -------

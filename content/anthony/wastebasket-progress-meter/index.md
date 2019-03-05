@@ -7,3 +7,6 @@ category: poem
 ![sketch](./wastebasket-progress-meter03.png)
 
 > The wastebasket is the writer’s best friend.
+
+![sketch](./desk-progress.jpg)
+![sketch](./desk-wastebasket.jpg)

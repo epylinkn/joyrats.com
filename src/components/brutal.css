@@ -12615,7 +12615,6 @@ div.style-toggle {
 
 
 
-
 .logo { font-family: "Fredoka One" !important; }
 body > div { height: 100%; }
 body > div > div { height: 100%; }
@@ -12628,4 +12627,13 @@ body > div > div { height: 100%; }
 
 .anthony-post img {
   max-width: 100%;
+}
+
+.anthony-post h2 {
+  display: block;
+  text-align: center;
+}
+
+.anthony-post .gatsby-resp-image-link, .anthony-post .gatsby-resp-image-wrapper {
+  margin: 15px 0;
 }
